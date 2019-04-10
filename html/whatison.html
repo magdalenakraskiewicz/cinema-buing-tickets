@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Repertuar</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="../index.html" class = "active"><img alt="Logo KinoiWino" src="../img/LOGO-KINO-I-WINO.png" width="60px" height="60px"></a>
+        <br>
+        <br>
+        <nav>
+            <ul>
+                <li><a href="../html/whatison.html">REPERTUAR</a></li>
+                <li><a href="">WYDARZENIA</a></li>
+                <li><a href="">NOWOŚCI</a></li>
+                <li> <a href="../html/login.html">MOJE KONTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1>REPERTUAR W TWOIM KINIE</h1>
+        <p>ZNAJDŹ KINO</p>
+        <select name="cinemalist" id="cityNameSelect" onchange="myCities()">
+                <option value="puste"></option>
+                <option value="0">Poznań</option>
+                <option value="1">Wrocław</option>
+                <option value="2">Gdańsk</option>
+        </select>
+    </section>
+
+
+    <!-- <section>
+        <div id="yourChoice"></div>
+    </section> -->
+
+    
+   
+
+    <footer>
+        <p>Wszystkie prawa zastrzeżone KinoiWino 2019 &copy;</p>
+    </footer>
+
+    <script src="../js/whatison.js"></script>
+    <!-- <script src="../js/data.js"></script>   -->
+
+
+       
+</body>
+</html>

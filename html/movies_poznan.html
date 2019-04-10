@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Repertuar</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="../index.html" class="active"><img alt="Logo KinoiWino" src="../img/LOGO-KINO-I-WINO.png" width="60px"
+                height="60px"></a>
+        <br>
+        <br>
+        <nav>
+            <ul>
+                <li><a href="../html/whatison.html">REPERTUAR</a></li>
+                <li><a href="">WYDARZENIA</a></li>
+                <li><a href="">NOWOŚCI</a></li>
+                <li> <a href="../html/login.html">MOJE KONTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section>
+        <h2>REPERTUAR W TWOIM KINIE - POZNAŃ</h2>
+        <div class="dateWidget">
+            <button type="button" data-automation-id="day_0" aria-label="Dziś">DZIŚ</button>
+            <button type="button" data-automation-id="day_1" aria-label="Poniedziałek">PN</button>
+            <button type="button" data-automation-id="day_2" aria-label="Wtorek">WT</button>
+            <button type="button" data-automation-id="day_3" aria-label="Środa">ŚR</button>
+            <button type="button" data-automation-id="day_4" aria-label="Czwartek">CZ</button>
+            <button type="button" data-automation-id="day_5" aria-label="Piątek">PT</button>
+            <button type="button" data-automation-id="day_6" aria-label="Sobota">SB</button>
+            <button type="button" data-automation-id="day_7" aria-label="Niedziela">ND</button>
+        </div>
+
+        <h4>AVATAR</h4>
+        <div class="HourBtn">
+            <button type="button" class="activeButton" onclick="choseAvatar()">08:00</button>
+            <button type="button" class="activeButton" onclick="choseAvatar()">14:15</button>
+            <button type="button" class="activeButton" onclick="choseAvatar()">19:00</button>
+        </div>
+
+        <h4>AMELIA</h4>
+        <div class="HourBtn">
+            <button type="button" class="activeButton" onclick="choseAmelia()">09:15</button>
+            <button type="button" class="activeButton" onclick="choseAmelia()">18:00</button>
+            <button type="button" class="activeButton" onclick="choseAmelia()">20:15</button>
+        </div>
+
+        <h4>SOLARIS</h4>
+        <div class="HourBtn">
+            <button type="button" class="activeButton" onclick="choseSolaris()">14:00</button>
+            <button type="button" class="activeButton" onclick="choseSolaris()">19:15</button>
+            <button type="button" class="activeButton" onclick="choseSolaris()">22:30</button>
+        </div>
+
+
+    </section>
+
+
+    <footer>
+        <p>Wszystkie prawa zastrzeżone KinoiWino 2019 &copy;</p>
+    </footer>
+
+    <script src="../js/cinema.js"></script>
+    <script src="../js/movies.js"></script>
+    <script src="../js/data.js"></script>
+</body>
+
+</html>

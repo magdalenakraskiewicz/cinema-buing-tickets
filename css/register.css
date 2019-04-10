@@ -1,0 +1,25 @@
+body {
+	background: url('../img/background.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	font-family: 'Lato', sans-serif;
+	
+}
+
+h2 {
+	color: white;
+	position: absolute;
+	top: 40%;
+	margin-left: 70px;
+	line-height: 150%;
+
+
+}
+
+h3 {
+	color: white;
+	position: absolute;
+	top: 60%;
+	margin-left: 70px;
+
+}

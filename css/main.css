@@ -1,0 +1,121 @@
+/* header{
+	background: url('../img/background.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	text-align: center;
+	padding: 15px;
+} */
+
+body{
+	padding: 0px;
+	margin: 0px;
+	background-color: #ffffff;
+	font-family: 'Lato', sans-serif;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+header{
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-color: #333333;
+
+}
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
+
+	
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+	text-decoration: none;
+	
+}
+
+li a:hover {
+	color: rgb(212, 49, 150);
+}
+
+
+#div1 div span {
+	
+	border-style: solid;
+	border-color: gray;
+	border-width: 1px;
+	margin: 4px;
+	padding: 4px;
+
+}
+
+#div1 div {
+	margin: 4px;
+	padding: 4px;
+}
+
+#buyTickets {
+background-color: rgb(107, 15, 107);
+border: 2px solid rgb(51, 6, 51);
+border-radius: 3px;
+color: white;
+width: 80px;
+height: 40px;
+font-size: 15px;
+}
+
+button {
+	outline: none;
+  }
+
+button:hover {
+	cursor: pointer;
+}
+
+#register:hover {
+	cursor: pointer;
+}
+#login:hover {
+	cursor: pointer;
+}
+
+.nonactiveButton{
+	background-color: rgb(117, 117, 117);
+	color: white;
+	border: 1px solid rgb(51, 6, 51);
+	border-radius: 4px;
+}
+.activeButton{
+	background-color: rgb(216, 79, 170);
+	border: 1px solid rgb(51, 6, 51);
+	border-radius: 4px;
+	color: white;
+}
+
+button:active {
+  background-color: rgb(109, 13, 109);
+  color: white;
+}
+
+footer {
+	position: fixed;
+	/* left: 0; */
+	bottom: 0;
+	width: 100%;
+	background-color: #000000;
+	color: white;
+	text-align: center;
+ }
