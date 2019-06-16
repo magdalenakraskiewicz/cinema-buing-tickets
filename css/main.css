@@ -1,75 +1,120 @@
-/* header{
-	background: url('../img/background.jpg');
-	background-size: 100%;
-	background-repeat: no-repeat;
-	text-align: center;
-	padding: 15px;
-} */
-
 body{
-	padding: 0px;
-	margin: 0px;
-	background-color: #ffffff;
+	padding: 0;
+	margin: 0;
+	background-size: 100%;
 	font-family: 'Lato', sans-serif;
+	/* background-size: cover; */
+	/* background: no-repeat 0 0 fixed; */
+	background-color: black;	
+}
+
+header {
+	/* top, transparent red, faked with gradient */ 
+	background: linear-gradient(rgba(78, 4, 55, 0.205), rgba(78, 4, 54, 0.205)),
+	url('../img/purple-wallpapers_2.jpg');
+	/* background: url('../img/purple-wallpapers_2.jpg'); */
 	background-size: 100%;
 	background-repeat: no-repeat;
+	/* min-height: 100%; */
+	/* min-width: 1024px; */
+	width: 100%;
+	height: auto;
 }
 
-header{
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-color: #333333;
+.logo {
+	position: relative;
+	/* top: 10px;
+	left: 50px; */
+	border-radius: 10px;
+	width: 80px;
+	height: 80px;
+	box-shadow: 3px 3px 10px black;
+	margin: 20px 0 10px 60px;
+}
 
+/* nowy kod */
+
+
+ul.topnav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: rgb(20, 5, 24);
+	font-weight: 300;
+	font-size: 14px;
+	box-shadow: 0 10px 10px black;
+	text-transform: uppercase;
+}
+  
+ul.topnav li {
+	float: left;	
+}
+
+li:not(:last-child):after {
+	content: "|";
+	color: white;
 }
 
 
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #000000;
-
-	
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
+ul.topnav li a {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 20px 60px;
 	text-decoration: none;
-	
 }
-
-li a:hover {
+  
+ul.topnav li a:hover:not(.active) {
 	color: rgb(212, 49, 150);
 }
 
+ul.topnav li a.active {
+	color: rgb(212, 49, 150);
+	font-weight: 400;
+}
+  
+ul.topnav li.right {float: right;}
+  
+@media screen and (max-width: 600px) {
+	ul.topnav li.right, 
+	ul.topnav li {
+		float: none;}
+	ul.topnav li a {
+		display: block;
+	}
+	li::after {
+		display: none;	
+	}
+}
+
+.background {	
+	/* min-height: 100%;
+	min-width: 1024px; */
+	
+	max-width: 100%;
+	height: auto;
+	
+	z-index:-1;
+	position: relative;
+}
 
 #div1 div span {
-	
 	border-style: solid;
 	border-color: gray;
 	border-width: 1px;
 	margin: 4px;
 	padding: 4px;
-
 }
 
 #div1 div {
-	margin: 4px;
+	margin: 10px;
 	padding: 4px;
 }
 
 #buyTickets {
 background-color: rgb(107, 15, 107);
-border: 2px solid rgb(51, 6, 51);
+border: 2px solid rgb(212, 86, 212);
 border-radius: 3px;
 color: white;
 width: 80px;
@@ -110,12 +155,24 @@ button:active {
   color: white;
 }
 
+/* left: 0; */
 footer {
+	
 	position: fixed;
-	/* left: 0; */
 	bottom: 0;
 	width: 100%;
-	background-color: #000000;
+
+	/* margin: 0;
+	padding: 0; */
+	background-color: rgb(20, 5, 24);
 	color: white;
 	text-align: center;
+	font-weight: 100;
+	letter-spacing: 1px;
+	font-size: 12px;
+	text-transform: uppercase;
+	box-shadow: 0 -10px 10px black;
+	/* background: url('../img/purple-wallpapers_2.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat; */
  }
