@@ -1,3 +1,6 @@
+
+/* !!! ogólne !!! */
+/* ////////////////////////////////////////////// */
 body{
 	padding: 0;
 	margin: 0;
@@ -5,14 +8,15 @@ body{
 	font-family: 'Lato', sans-serif;
 	/* background-size: cover; */
 	/* background: no-repeat 0 0 fixed; */
-	background-color: black;	
+	background-color:black;
 }
+
+.white { background-color: #F4F4F4; }
 
 header {
 	/* top, transparent red, faked with gradient */ 
 	background: linear-gradient(rgba(78, 4, 55, 0.205), rgba(78, 4, 54, 0.205)),
-	url('../img/purple-wallpapers_2.jpg');
-	/* background: url('../img/purple-wallpapers_2.jpg'); */
+	url('../img/purple-wallpapers_6.jpg');
 	background-size: 100%;
 	background-repeat: no-repeat;
 	/* min-height: 100%; */
@@ -21,60 +25,63 @@ header {
 	height: auto;
 }
 
+
+/* !!! nawigacja !!! */
+/* ////////////////////////////////////////////// */
+
 .logo {
 	position: relative;
-	/* top: 10px;
-	left: 50px; */
 	border-radius: 10px;
 	width: 80px;
 	height: 80px;
 	box-shadow: 3px 3px 10px black;
-	margin: 20px 0 10px 60px;
+	margin: 20px 0 10px 145px;
 }
-
-/* nowy kod */
-
 
 ul.topnav {
 	list-style-type: none;
 	margin: 0;
-	padding: 0;
+	padding: 0 100px 0 100px;
 	overflow: hidden;
 	background-color: rgb(20, 5, 24);
+	/* background-color: rgb(30, 8, 36); */
 	font-weight: 300;
 	font-size: 14px;
-	box-shadow: 0 10px 10px black;
+	box-shadow: 0 6px 10px 6px black;
 	text-transform: uppercase;
 }
   
-ul.topnav li {
-	float: left;	
-}
+ul.topnav li { float: left; }
 
 li:not(:last-child):after {
 	content: "|";
 	color: white;
 }
 
-
 ul.topnav li a {
 	display: inline-block;
 	color: white;
 	text-align: center;
-	padding: 20px 60px;
+	padding: 20px 45px;
 	text-decoration: none;
 }
-  
-ul.topnav li a:hover:not(.active) {
-	color: rgb(212, 49, 150);
-}
+
+ul.topnav li a:hover:not(.active) { color: rgb(212, 49, 150); }
 
 ul.topnav li a.active {
 	color: rgb(212, 49, 150);
 	font-weight: 400;
 }
-  
-ul.topnav li.right {float: right;}
+
+ul.topnav li.right { float: right; }
+
+
+/* ul.topnav li.right a:hover:not(.active) { color: rgb(212, 49, 150); } */
+
+ul.topnav li.active {
+	color: rgb(212, 49, 150);
+	font-weight: 400;
+}
   
 @media screen and (max-width: 600px) {
 	ul.topnav li.right, 
@@ -88,16 +95,23 @@ ul.topnav li.right {float: right;}
 	}
 }
 
+
+/* !!! srodek !!! */
+/* ////////////////////////////////////////////// */
+
 .background {	
 	/* min-height: 100%;
 	min-width: 1024px; */
-	
-	max-width: 100%;
+	/* max-width: 100%; */
+	width: 100%;
 	height: auto;
-	
 	z-index:-1;
 	position: relative;
 }
+
+
+/* !!! sprawdzić !!! */
+/* ////////////////////////////////////////////// */
 
 #div1 div span {
 	border-style: solid;
@@ -122,46 +136,163 @@ height: 40px;
 font-size: 15px;
 }
 
-button {
-	outline: none;
-  }
+#register:hover { cursor: pointer; }
 
-button:hover {
-	cursor: pointer;
-}
-
-#register:hover {
-	cursor: pointer;
-}
-#login:hover {
-	cursor: pointer;
-}
+#login:hover { cursor: pointer; }
 
 .nonactiveButton{
 	background-color: rgb(117, 117, 117);
 	color: white;
 	border: 1px solid rgb(51, 6, 51);
 	border-radius: 4px;
+	font-size: 13px;
+	font-weight: 300;
+	margin: 5px 15px 0 0;
+	padding: 5px 10px;
 }
 .activeButton{
 	background-color: rgb(216, 79, 170);
 	border: 1px solid rgb(51, 6, 51);
 	border-radius: 4px;
 	color: white;
+	font-size: 13px;
+	font-weight: 300;
+	margin: 5px 15px 0 0;
+	padding: 5px 10px;
 }
 
-button:active {
-  background-color: rgb(109, 13, 109);
-  color: white;
+/* !!! repertuar !!! */
+/* ////////////////////////////////////////////// */
+
+div.whatIsOn h2 {
+	background-color: rgb(202, 200, 200);
+	color: black;
+	font-weight: 300;
+	font-size: 25px;
+	margin: 0;
+	padding: 40px 0 20px 145px;
+	text-transform: uppercase;
 }
 
-/* left: 0; */
+div.findCinema h4 {
+	color: black;
+	font-weight: 300;
+	font-size: 20px;
+	margin: 10px 0 0 0;
+	padding: 20px 0 20px 145px;
+	text-transform: uppercase;
+	clear: both;
+}
+
+div.options {
+	margin: 0;
+	padding: 0 145px;
+}
+
+div.options select {
+	color: rgb(109, 13, 109);
+	background-color: white;
+	width: 135px;
+	height: 25px;
+}
+
+
+/* !!! top panel repertuar miasto!!! */
+/* ////////////////////////////////////////////// */
+
+div.topPanel {
+	background-color: rgb(202, 200, 200);
+	width: 100%;
+	height: auto;
+	float: left;
+	margin: 0 0 10px 0;
+}
+
+div.whatIsOnSecond h2 {
+	background-color: rgb(202, 200, 200);
+	color: black;
+	font-weight: 300;
+	font-size: 25px;
+	margin: 0;
+	padding: 40px 0 20px 145px;
+	text-transform: uppercase;
+	float: left;
+}
+
+div.findCinemaSecond {
+	background-color: rgb(202, 200, 200);
+	float: right;
+	margin: 0 140px;
+}
+
+div.findCinemaSecond h4 {
+	font-weight: 400;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+div.findCinemaSecond select {
+	color: rgb(109, 13, 109);
+	background-color: white;
+	width: 100px;
+	height: 25px;
+}
+
+div.movies h4 {
+	color: black;
+	font-weight: 300;
+	font-size: 22px;
+	margin: 10px 0 0 0;
+	padding: 20px 0 20px 145px;
+	text-transform: uppercase;
+	clear: both;
+}
+
+div.firstMovie,
+div.secondMovie {
+	margin: 45px 0 0 0;
+	padding: 0 145px;
+	width: 100%;
+	height: 200px;
+}
+
+div.thirdMovie {
+	margin: 45px 0 50px 0;
+	padding: 0 145px;
+	width: 100%;
+	height: 200px;
+}
+
+.moviePicture,
+.movieInfo { float: left; }
+
+.movieInfo { margin: -20px 0 0 30px; }
+
+hr {
+	width: 80%;
+	margin: 0 145px;
+}
+
+
+/* !!! buttons !!! */
+/* ////////////////////////////////////////////// */
+div.dateWidget button {
+	font-size: 18px;
+	font-weight: 300;
+	margin: 15px 15px 0 0;
+	padding: 5px 5px;
+	border: none;
+	background-color: #F4F4F4;
+}
+
+
+/* !!! stopka !!! */
+/* ////////////////////////////////////////////// */
+
 footer {
-	
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-
 	/* margin: 0;
 	padding: 0; */
 	background-color: rgb(20, 5, 24);
@@ -169,10 +300,26 @@ footer {
 	text-align: center;
 	font-weight: 100;
 	letter-spacing: 1px;
-	font-size: 12px;
+	font-size: 11px;
 	text-transform: uppercase;
-	box-shadow: 0 -10px 10px black;
-	/* background: url('../img/purple-wallpapers_2.jpg');
-	background-size: 100%;
-	background-repeat: no-repeat; */
+	/* box-shadow: 0 -10px 10px black; */
  }
+
+ .firstPage { box-shadow: 0px 0px 10px 6px black; }
+
+
+ /* !!! niepotrzebne !!! */
+ /* ////////////////////////////////////////////// */
+
+ /* button {
+	outline: none;
+  } */
+
+/* div.dateWidget button:hover {
+	cursor: pointer;
+} */
+
+/* div.dateWidget button:active {
+	background-color: rgb(109, 13, 109);
+	color: white;
+} */

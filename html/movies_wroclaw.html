@@ -7,63 +7,96 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Repertuar</title>
     <link rel="stylesheet" type="text/css" href="../css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <header>
-        <a href="../index.html" class="active"><img alt="Logo KinoiWino" src="../img/LOGO-KINO-I-WINO.png" width="60px"
-                height="60px"></a>
-        <br>
-        <br>
-        <nav>
-            <a href="../html/whatison.html">REPERTUAR</a>
-            <a href="">WYDARZENIA</a>
-            <a href="">NOWOŚCI</a>
-            <a href="../html/login.html">MOJE KONTO</a>
-        </nav>
-    </header>
+<body class="white">
+    <header class="main-head"><a href="../index.html"><img class="logo" alt="Logo KinoiWino"
+                src="../img/LOGO-KINO-I-WINO.png" width="60px" height="60px"></a></header>
+    <nav>
+        <ul class="topnav">
+            <li><a href="../index.html">KINO I WINO</a></li>
+            <li><a class="active" href="../html/whatison.html">REPERTUAR</a></li>
+            <li><a href="../html/sale.html">PROMOCJE</a></li>
+            <li class="right"><a href="../html/login.html">MOJE KONTO</a></li>
+        </ul>
+    </nav>
+
+    <div class="topPanel">
+        <div class="whatIsOnSecond">
+            <h2>Wrocław - kino i wino</h2>
+        </div>
+
+        <div class="findCinemaSecond">
+            <h4>Znajdź kino</h4>
+            <select id="cityNameSelect" name="cinemalist" onchange="myCities()">
+                <option value="puste"></option>
+                <option value="0">Poznań</option>
+                <option value="1">Wrocław</option>
+                <option value="2">Gdańsk</option>
+            </select>
+        </div>
+    </div>
 
     <section>
-        <h2>REPERTUAR W TWOIM KINIE - WROCŁAW</h2>
-        <div class="dateWidget">
-            <button type="button" data-automation-id="day_0" aria-label="Dziś">DZIŚ</button>
-            <button type="button" data-automation-id="day_1" aria-label="Poniedziałek">PN</button>
-            <button type="button" data-automation-id="day_2" aria-label="Wtorek">WT</button>
-            <button type="button" data-automation-id="day_3" aria-label="Środa">ŚR</button>
-            <button type="button" data-automation-id="day_4" aria-label="Czwartek">CZ</button>
-            <button type="button" data-automation-id="day_5" aria-label="Piątek">PT</button>
-            <button type="button" data-automation-id="day_6" aria-label="Sobota">SB</button>
-            <button type="button" data-automation-id="day_7" aria-label="Niedziela">ND</button>
+        <div class="movies">
+            <h4>Repertuar</h4>
+        </div>
+        <div class="firstMovie">
+            <div class="moviePicture">
+                <img class="gwiezdneWojny" alt="Gwiezdne Wojny: Ostatni Jedi" src="../img/Gwiezdne Wojny.jpg" width="110px" height="auto">
+            </div>
+            <div class="movieInfo">
+                <h3>GWIEZDNE WOJNY: OSTATNI JEDI</h3>
+                <div class="HourBtn">
+                    <button type="button" class="activeButton" onclick="choseAvatar()">08:00</button>
+                    <button type="button" class="activeButton" onclick="choseAvatar()">14:15</button>
+                    <button type="button" class="activeButton" onclick="choseAvatar()">19:00</button>
+                </div>
+            </div>
         </div>
 
-        <h4>GWIEZDNE WOJNY: OSTATNI JEDI</h4>
-        <div class="HourBtn">
-            <button type="button" class="activeButton" onclick="choseGwiezdne()">09:00</button>
-            <button type="button" class="activeButton" onclick="choseGwiezdne()">11:05</button>
-            <button type="button" class="activeButton" onclick="choseGwiezdne()">14:15</button>
-        </div>
-        <h4>LEON ZAWODOWIEC</h4>
-        <div class="HourBtn">
-                <button type="button" class="activeButton" onclick="choseLeon()">16:15</button>
-                <button type="button" class="activeButton" onclick="choseLeon()">18:00</button>
-                <button type="button" class="activeButton" onclick="choseLeon()">20:15</button>
-        </div>
-        <h4>PULP FICTION</h4>
-        <div class="HourBtn">
-                <button type="button" class="activeButton" onclick="chosePulp()">14:00</button>
-                <button type="button" class="activeButton" onclick="chosePulp()">16:15</button>
-                <button type="button" class="activeButton" onclick="chosePulp()">19:15</button>
+        <hr>
+
+        <div class="secondMovie">
+            <div class="moviePicture">
+                <img class="leonZawodowiec" alt="Leon Zawodowiec" src="../img/Leon Zawodowiec.jpg" width="110px" height="auto">
+            </div>
+            <div class="movieInfo">
+                <h3>LEON ZAWODOWIEC</h3>
+                <div class="HourBtn">
+                    <button type="button" class="activeButton" onclick="choseAmelia()">09:15</button>
+                    <button type="button" class="activeButton" onclick="choseAmelia()">18:00</button>
+                    <button type="button" class="activeButton" onclick="choseAmelia()">20:15</button>
+                </div>
+            </div>
         </div>
 
+        <hr>
+
+        <div class="thirdMovie">
+            <div class="moviePicture">
+                <img class="pulpFiction" alt="Pulp Fiction" src="../img/Pulp Fiction.jpg" width="110px" height="auto">
+            </div>
+
+            <div class="movieInfo">
+                <h3>PULP FICTION</h3>
+                <div class="HourBtn">
+                    <button type="button" class="activeButton" onclick="choseSolaris()">14:00</button>
+                    <button type="button" class="activeButton" onclick="choseSolaris()">19:15</button>
+                    <button type="button" class="activeButton" onclick="choseSolaris()">22:30</button>
+                </div>
+            </div>
+        </div>
     </section>
 
 
     <footer>
-        <p>Wszystkie prawa zastrzeżone KinoiWino 2019 &copy;</p>
+        <p>&copy; Kino i Wino. | All rights reserved. | Designed by Magdalena Kraśkiewicz.</p>
     </footer>
 
     <script src="../js/cinema.js"></script>
+    <script src="../js/whatison.js"></script>
     <script src="../js/movies.js"></script>
     <script src="../js/data.js"></script>
 </body>

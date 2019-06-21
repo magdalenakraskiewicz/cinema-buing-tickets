@@ -17,31 +17,20 @@
         <ul class="topnav">
             <li><a href="../index.html">KINO I WINO</a></li>
             <li><a href="../html/whatison.html">REPERTUAR</a></li>
-            <li><a href="../html/sale.html">PROMOCJE</a></li>
-            <li class="right active"><a href="../html/login.html">MOJE KONTO</a></li>
+            <li><a class="active" href="../html/sale.html">PROMOCJE</a></li>
+            <li class="right"><a href="../html/login.html">MOJE KONTO</a></li>
         </ul>
     </nav>
 
     <section>
-        <form name="login">
-            <div class="login">ZALOGUJ SIĘ<br><br>
-                <input type="email" placeholder="e-mail" id="email"><br><br>
-                <input type="password" placeholder="Hasło" id="password"><br>
-                <p hidden id="wrong">Podane dane są nieprawidłowe.</p><br>
-                <input type="checkbox" name="rememberme">Zapamiętaj mnie
-                <input type="button" onclick="validateForm()" value="ZALOGUJ" id="login">
-                <p>Nie masz konta?</p>
-                <input type="button" onclick="registerForm()" value="ZAREJESTRUJ SIĘ" id="register">
-            </div>
-        </form>
-
+        <div class="whatIsOn">
+            <h2>Promocje w twoim kinie w twoim kinie</h2>
+        </div>
     </section>
 
 
     <!-- <section>
-        <div class="whatIsOn">
-            <h2>Repertuar w twoim kinie</h2>
-        </div>
+        <div id="yourChoice"></div>
     </section> -->
 
 
@@ -50,9 +39,8 @@
     </footer>
 
 
-    <script src="../js/login.js"></script>
-    <script src="../js/register.js"></script>
-    <script src="../js/data.js"></script>
+    <script src="../js/whatison.js"></script>
+    <!-- <script src="../js/data.js"></script>   -->
 
 </body>
 

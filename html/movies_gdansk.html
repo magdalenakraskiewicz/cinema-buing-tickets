@@ -1,52 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Repertuar</title>
     <link rel="stylesheet" type="text/css" href="../css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <a href="../index.html" class = "active"><img alt="Logo KinoiWino" src="../img/LOGO-KINO-I-WINO.png" width="60px" height="60px"></a>
-        <br>
-        <br>
-        <nav>
-            <a href="../html/whatison.html">REPERTUAR</a>
-            <a href="">WYDARZENIA</a>
-            <a href="">NOWOŚCI</a>
-            <a href="../html/login.html">MOJE KONTO</a>
-        </nav>
-    </header>
+
+<body class="white">
+    <header class="main-head"><a href="../index.html"><img class="logo" alt="Logo KinoiWino"
+                src="../img/LOGO-KINO-I-WINO.png" width="60px" height="60px"></a></header>
+    <nav>
+        <ul class="topnav">
+            <li><a href="../index.html">KINO I WINO</a></li>
+            <li><a class="active" href="../html/whatison.html">REPERTUAR</a></li>
+            <li><a href="../html/sale.html">PROMOCJE</a></li>
+            <li class="right"><a href="../html/login.html">MOJE KONTO</a></li>
+        </ul>
+    </nav>
+
+    <div class="topPanel">
+        <div class="whatIsOnSecond">
+            <h2>Gdańsk - kino i wino</h2>
+        </div>
+
+        <div class="findCinemaSecond">
+            <h4>Znajdź kino</h4>
+            <select id="cityNameSelect" name="cinemalist" onchange="myCities()">
+                <option value="puste"></option>
+                <option value="0">Poznań</option>
+                <option value="1">Wrocław</option>
+                <option value="2">Gdańsk</option>
+            </select>
+        </div>
+    </div>
 
     <section>
-        <h2>REPERTUAR W TWOIM KINIE - GDAŃSK</h2>
-        <h4>JAK POKONAĆ SMOKA 3</h4>
-        <button type="button" id="">9:00</button>
-        <button type="button" id="">11:00</button>
-        <button type="button" id="">14:15</button>
-        <button type="button" id="">19:00</button>
-        <h4>ZIMNA WOJNA</h4>
-        <button type="button" id="">16:15</button>
-        <button type="button" id="">18:00</button>
-        <button type="button" id="">20:15</button>
-        <button type="button" id="">22:00</button>
-        <h4>GREEN BOOK</h4>
-        <button type="button" id="">14:00</button>
-        <button type="button" id="">16:15</button>
-        <button type="button" id="">19:15</button>
-        <button type="button" id="">21:00</button>
+        <div class="movies">
+            <h4>Repertuar</h4>
+        </div>
+        <div class="firstMovie">
+            <div class="moviePicture">
+                <img class="jakPokonacSmoka" alt="Jak pokonać smoka 3" src="../img/Jak pokonać smoka 3.jpg" width="110px" height="auto">
+            </div>
+            <div class="movieInfo">
+                <h3>JAK POKONAĆ SMOKA 3</h3>
+                <div class="HourBtn">
+                    <button type="button" class="activeButton" onclick="choseAvatar()">08:00</button>
+                    <button type="button" class="activeButton" onclick="choseAvatar()">14:15</button>
+                    <button type="button" class="activeButton" onclick="choseAvatar()">19:00</button>
+                </div>
+            </div>
+        </div>
 
+        <hr>
+
+        <div class="secondMovie">
+            <div class="moviePicture">
+                <img class="zimnaWojna" alt="Zimna Wojna" src="../img/Zimna Wojna.jpg" width="110px" height="auto">
+            </div>
+            <div class="movieInfo">
+                <h3>ZIMNA WOJNA</h3>
+                <div class="HourBtn">
+                    <button type="button" class="activeButton" onclick="choseAmelia()">09:15</button>
+                    <button type="button" class="activeButton" onclick="choseAmelia()">18:00</button>
+                    <button type="button" class="activeButton" onclick="choseAmelia()">20:15</button>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="thirdMovie">
+            <div class="moviePicture">
+                <img class="greenBook" alt="Green Book" src="../img/Green Book.jpg" width="110px" height="auto">
+            </div>
+
+            <div class="movieInfo">
+                <h3>GREEN BOOK</h3>
+                <div class="HourBtn">
+                    <button type="button" class="activeButton" onclick="choseSolaris()">14:00</button>
+                    <button type="button" class="activeButton" onclick="choseSolaris()">19:15</button>
+                    <button type="button" class="activeButton" onclick="choseSolaris()">22:30</button>
+                </div>
+            </div>
+        </div>
     </section>
-   
+
 
     <footer>
-        <p>Wszystkie prawa zastrzeżone KinoiWino 2019 &copy;</p>
+        <p>&copy; Kino i Wino. | All rights reserved. | Designed by Magdalena Kraśkiewicz.</p>
     </footer>
 
-    <script src="../js/cinema.js"></script>  
-    <script src="../js/data.js"></script>      
+    <script src="../js/cinema.js"></script>
+    <script src="../js/whatison.js"></script>
+    <script src="../js/movies.js"></script>
+    <script src="../js/data.js"></script>
 </body>
+
 </html>

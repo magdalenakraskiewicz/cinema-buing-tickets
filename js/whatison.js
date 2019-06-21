@@ -46,7 +46,7 @@ function myCities() {
     
     
     function openTimeTable() {
-        window.open(linki[cityCode],'_blank');
+        window.open(linki[cityCode],'_self');
         
     }
 
