@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Repertuar</title>
+    <title>Poznań</title>
     <link rel="stylesheet" type="text/css" href="../css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700&display=swap" rel="stylesheet">
 </head>
@@ -42,16 +42,6 @@
         <div class="movies">
             <h4>Repertuar</h4>
         </div>
-        <!-- <div class="dateWidget">
-            <button type="button" data-automation-id="day_0" aria-label="Dziś">DZIŚ</button>
-            <button type="button" data-automation-id="day_1" aria-label="Poniedziałek">PN</button>
-            <button type="button" data-automation-id="day_2" aria-label="Wtorek">WT</button>
-            <button type="button" data-automation-id="day_3" aria-label="Środa">ŚR</button>
-            <button type="button" data-automation-id="day_4" aria-label="Czwartek">CZ</button>
-            <button type="button" data-automation-id="day_5" aria-label="Piątek">PT</button>
-            <button type="button" data-automation-id="day_6" aria-label="Sobota">SB</button>
-            <button type="button" data-automation-id="day_7" aria-label="Niedziela">ND</button>
-        </div> -->
 
         <div class="firstMovie">
             <div class="moviePicture">
@@ -60,9 +50,9 @@
             <div class="movieInfo">
                 <h3>AVATAR</h3>
                 <div class="HourBtn">
-                    <button type="button" class="activeButton" onclick="choseAvatar()">08:00</button>
-                    <button type="button" class="activeButton" onclick="choseAvatar()">14:15</button>
-                    <button type="button" class="activeButton" onclick="choseAvatar()">19:00</button>
+                    <button type="button" class="activeButton" onclick="choseMoviePoznan('Avatar','8:00','Poznań')">08:00</button>
+                    <button type="button" class="activeButton" onclick="choseMoviePoznan('Avatar','14:15','Poznań')">14:15</button>
+                    <button type="button" class="activeButton" onclick="choseMoviePoznan('Avatar','19:00','Poznań')">19:00</button>
                 </div>
             </div>
         </div>
@@ -76,9 +66,9 @@
             <div class="movieInfo">
                 <h3>AMELIA</h3>
                 <div class="HourBtn">
-                    <button type="button" class="activeButton" onclick="choseAmelia()">09:15</button>
-                    <button type="button" class="activeButton" onclick="choseAmelia()">18:00</button>
-                    <button type="button" class="activeButton" onclick="choseAmelia()">20:15</button>
+                    <button type="button" class="activeButton" onclick="choseMoviePoznan('Amelia','9:15','Poznań')">09:15</button>
+                    <button type="button" class="activeButton" onclick="choseMoviePoznan('Amelia','18:00','Poznań')">18:00</button>
+                    <button type="button" class="activeButton" onclick="choseMoviePoznan('Amelia','20:15','Poznań')">20:15</button>
                 </div>
             </div>
         </div>
@@ -93,9 +83,9 @@
             <div class="movieInfo">
                 <h3>SOLARIS</h3>
                 <div class="HourBtn">
-                    <button type="button" class="activeButton" onclick="choseSolaris()">14:00</button>
-                    <button type="button" class="activeButton" onclick="choseSolaris()">19:15</button>
-                    <button type="button" class="activeButton" onclick="choseSolaris()">22:30</button>
+                    <button type="button" class="activeButton" onclick="choseMoviePoznan('Solaris','14:00','Poznań')">14:00</button>
+                    <button type="button" class="activeButton" onclick="choseMoviePoznan('Solaris','19:15','Poznań')">19:15</button>
+                    <button type="button" class="activeButton" onclick="choseMoviePoznan('Solaris','22:30','Poznań')">22:30</button>
                 </div>
             </div>
         </div>
@@ -106,7 +96,7 @@
         <p>&copy; Kino i Wino. | All rights reserved. | Designed by Magdalena Kraśkiewicz.</p>
     </footer>
 
-    <script src="../js/cinema.js"></script>
+    <script src="../js/cinema_poznan.js"></script>
     <script src="../js/whatison.js"></script>
     <script src="../js/movies.js"></script>
     <script src="../js/data.js"></script>

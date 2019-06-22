@@ -2,27 +2,29 @@
 //'_self'
 //_blank'
 
-function choseAvatar() {
-    window.open('../html/cinema_poznan_s1.html','_self');
+function choseMoviePoznan(title, time, city) {
+    //alert(time + ": "+title);
+    const encodedTime = encodeURIComponent(time);
+    const encodedTitle = encodeURIComponent(title);
+    const encodedCity = encodeURIComponent(city);
+    window.open('../html/cinema_poznan_s1.html?title='+encodedTitle+"&time="+encodedTime+"&city="+encodedCity,'_self');
 }
-function choseAmelia() {
-    window.open('../html/cinema_poznan_s2.html','_self');
+
+function choseMovieWroclaw(title, time, city) {
+    const encodedTime = encodeURIComponent(time);
+    const encodedTitle = encodeURIComponent(title);
+    const encodedCity = encodeURIComponent(city);
+    window.open('../html/cinema_wroclaw_s2.html?title='+encodedTitle+"&time="+encodedTime+"&city="+encodedCity,'_self');
 }
-function choseSolaris() {
-    window.open('../html/cinema_poznan_s3.html','_self');
+
+function choseMovieGdansk(title, time, city) {
+    const encodedTime = encodeURIComponent(time);
+    const encodedTitle = encodeURIComponent(title);
+    const encodedCity = encodeURIComponent(city);
+    window.open('../html/cinema_gdansk_s3.html?title='+encodedTitle+"&time="+encodedTime+"&city="+encodedCity,'_self');
 }
 
 
-//lasted hours in gray and nonactive
-// var actualHour = new Date().getHours();
-// let avatar1Time = document.getElementById("HourBtn").innerHTML;
-// let avatar1Hour = parseInt(avatar1Time.split(':')[0]);
-// if (avatar1Hour < actualHour) {
-//     document.getElementById("HourBtn").classList.remove("activeButton");
-//     document.getElementById("HourBtn").classList.add("nonactiveButton");
-//     document.getElementById("HourBtn").onclick=undefined;
-
-// };
 
 //lasted hours in gray and nonactive
 let actualHour = new Date().getHours();

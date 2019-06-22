@@ -6,7 +6,7 @@ for(var j=1; j<10; j++) {
     var para_parent = document.createElement("div");
     var node_parent = document.createTextNode(j);
 
-    for(var i=1; i<10; i++) {
+    for(var i=1; i<15; i++) {
         var para = document.createElement("span");
         var node = document.createTextNode("rz:" +j + "m:" + i);
 
@@ -41,3 +41,18 @@ function buyTickets() {
 }
 
 
+function getMovieInfo(){
+    const url = new URL(document.location.href);
+    const title = url.searchParams.get('title');
+    const time = url.searchParams.get('time');
+    const city = url.searchParams.get('city');
+    return {
+        "title": title,
+        "time": time,
+        "city": city
+    };
+}
+const movieInfo = getMovieInfo();
+document.getElementById("title").innerText = movieInfo.title;
+document.getElementById("time").innerText = movieInfo.time;
+document.getElementById("city").innerText = movieInfo.city;
