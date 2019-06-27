@@ -23,26 +23,32 @@
     </nav>
 
     <section>
-        <form name="login">
-            <div class="login">ZALOGUJ SIĘ<br><br>
-                <input type="email" placeholder="e-mail" id="email"><br><br>
-                <input type="password" placeholder="Hasło" id="password"><br>
-                <p hidden id="wrong">Podane dane są nieprawidłowe.</p><br>
-                <input type="checkbox" name="rememberme">Zapamiętaj mnie
-                <input type="button" onclick="validateForm()" value="ZALOGUJ" id="login">
-                <p>Nie masz konta?</p>
-                <input type="button" onclick="registerForm()" value="ZAREJESTRUJ SIĘ" id="register">
-            </div>
-        </form>
-
-    </section>
-
-
-    <!-- <section>
-        <div class="whatIsOn">
-            <h2>Repertuar w twoim kinie</h2>
+        <div class="mainHeadline">
+            <h2>Logowanie</h2>
         </div>
-    </section> -->
+
+        <div class="mainLoginFirst">
+            <form name="login">
+                <div class="loginFirst">ZALOGUJ SIĘ<br><br>
+                    <input type="email" placeholder="e-mail" id="email"><br><br>
+                    <input type="password" placeholder="Hasło" id="password"><br>
+                    <p hidden id="wrong">Podane dane są nieprawidłowe.</p><br>
+                </div>
+        </div>
+
+        <div class="mainLoginSecond">
+            <form name="login">
+                <div class="loginSecond">
+                    <input class="extra" type="checkbox" name="rememberme">Zapamiętaj mnie
+                    <input type="button" onclick="validateForm()" value="ZALOGUJ" id="login">
+                    <br>
+                    <p class="extra">Nie masz konta?</p>
+                    <input type="button" onclick="registerForm()" value="ZAREJESTRUJ SIĘ" id="register">
+                </div>
+            </form>
+
+        </div>
+    </section>
 
 
     <footer>

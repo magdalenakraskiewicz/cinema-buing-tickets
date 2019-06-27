@@ -1,5 +1,5 @@
 
-/* !!! ogólne !!! */
+/* 1. Ogólne */
 /* ////////////////////////////////////////////// */
 body{
 	padding: 0;
@@ -8,7 +8,7 @@ body{
 	font-family: 'Lato', sans-serif;
 	/* background-size: cover; */
 	/* background: no-repeat 0 0 fixed; */
-	background-color:gray;
+	background-color: black;
 }
 
 .white { background-color: #F4F4F4; }
@@ -42,8 +42,13 @@ header {
 	height: auto;
 }
 
+span {
+	font-weight: 400;
+	
+}
 
-/* !!! nawigacja !!! */
+
+/* 2. Nawigacja */
 /* ////////////////////////////////////////////// */
 
 .logo {
@@ -63,7 +68,7 @@ ul.topnav {
 	background-color: rgb(20, 5, 24);
 	/* background-color: rgb(30, 8, 36); */
 	font-weight: 300;
-	font-size: 14px;
+	font-size: 15px;
 	box-shadow: 0 6px 10px 6px black;
 	text-transform: uppercase;
 }
@@ -113,24 +118,51 @@ ul.topnav li.active {
 }
 
 
-/* !!! srodek !!! */
+/* 3. Background */
 /* ////////////////////////////////////////////// */
 
-.background {	
-	/* min-height: 100%;
-	min-width: 1024px; */
-	/* max-width: 100%; */
+.background {
 	width: 100%;
 	height: auto;
-	z-index:-1;
-	position: relative;
+	position: absolute;
+  	left: 0px;
+  	top: 170px;
+  	z-index: -1;
+}
+
+div.infoFront {
+	margin: 300px 0 0 145px;
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;	
+	font-size: 35px;
+}
+
+div.details span {
+	font-weight: 300;
+	text-transform: uppercase;	
+	font-size: 15px;
+	color: white;
+	letter-spacing: 3px;	
+}
+
+div.details span:not(:last-of-type):after {
+	content: "|";
+	color: white;
+}
+
+span.title {
+	margin-left: 20px;
 }
 
 
-/* !!! sprawdzić !!! */
+
+/* 4. Sala kinowa */
 /* ////////////////////////////////////////////// */
 
 #div1 div span {
+	font-size: 16px;
 	border-style: solid;
 	border-color: gray;
 	border-width: 1px;
@@ -138,66 +170,62 @@ ul.topnav li.active {
 	padding: 4px;
 }
 
-#div1 div {
-	margin: 10px;
-	padding: 4px;
+#div1 div,
+.screen,
+#cena {
+	display: flex;
+	justify-content: center;
+	font-weight: 400;
 }
 
+.button {
+	display: flex;
+	justify-content: center;
+}
 #buyTickets {
-background-color: rgb(107, 15, 107);
-border: 2px solid rgb(212, 86, 212);
-border-radius: 3px;
-color: white;
-width: 80px;
-height: 40px;
-font-size: 15px;
-}
-
-#register:hover { cursor: pointer; }
-
-#login:hover { cursor: pointer; }
-
-.nonactiveButton{
-	background-color: rgb(117, 117, 117);
-	color: white;
-	border: 1px solid rgb(51, 6, 51);
-	border-radius: 4px;
-	font-size: 13px;
-	font-weight: 300;
-	margin: 5px 15px 0 0;
-	padding: 5px 10px;
-}
-.activeButton{
-	background-color: rgb(216, 79, 170);
+	background-color: rgb(212, 49, 150);
 	border: 1px solid rgb(51, 6, 51);
 	border-radius: 4px;
 	color: white;
-	font-size: 13px;
+	font-size: 15px;
 	font-weight: 300;
-	margin: 5px 15px 0 0;
+	width: 80px;
+	height: 40px;
+	margin: 0 0 80px 0;
 	padding: 5px 10px;
+	}
+
+.addedSpan {
+	color: black;
+}
+.selectedSpan {
+	color: rgb(212, 49, 150);
 }
 
-/* !!! repertuar !!! */
+
+
+/* 5. Repertuar */
 /* ////////////////////////////////////////////// */
 
-div.whatIsOn h2 {
+div.mainHeadline h2 {
 	background-color: rgb(202, 200, 200);
 	color: black;
 	font-weight: 300;
 	font-size: 25px;
-	margin: 0;
+	margin: 0 0 50px 0;
+	
 	padding: 40px 0 20px 145px;
 	text-transform: uppercase;
 }
 
 div.findCinema h4,
-div#summary h4 {
+div#summary h4,
+div.loginFirst {
 	color: black;
 	font-weight: 300;
 	font-size: 20px;
-	margin: 10px 0 0 0;
-	padding: 20px 0 20px 145px;
+	margin: 0;
+	padding: 0 0 20px 145px;
 	text-transform: uppercase;
 	clear: both;
 }
@@ -214,8 +242,16 @@ div.options select {
 	height: 25px;
 }
 
+div.loginFirst input {
+	width: 135px;
+	height: 25px;
+	border: 1px solid gray;
+	border-radius: 5px;
+}
 
-/* !!! top panel repertuar miasto!!! */
+
+
+/* 6. Top Panel Repertuar miasto */
 /* ////////////////////////////////////////////// */
 
 div.topPanel {
@@ -226,7 +262,7 @@ div.topPanel {
 	margin: 0 0 10px 0;
 }
 
-div.whatIsOnSecond h2 {
+div.mainHeadlineMovies h2 {
 	background-color: rgb(202, 200, 200);
 	color: black;
 	font-weight: 300;
@@ -291,20 +327,93 @@ hr {
 	margin: 0 145px;
 }
 
-
-/* !!! buttons !!! */
-/* ////////////////////////////////////////////// */
-div.dateWidget button {
-	font-size: 18px;
-	font-weight: 300;
-	margin: 15px 15px 0 0;
-	padding: 5px 5px;
-	border: none;
-	background-color: #F4F4F4;
+/* 7. Twoje zamówienie */
+/* /////////////////////////////////////////////// */
+div.selectionInfo div {
+	color: black;
+	font-weight: 400;
+	font-size: 17px;
+	margin: 0 0 30px 0;
+	padding: 0 0 0 145px;
+	text-transform: uppercase;
+	line-height: 3px;
 }
 
 
-/* !!! stopka !!! */
+/* 8. Buttons */
+/* ////////////////////////////////////////////// */
+
+.nonactiveButton{
+	background-color: rgb(117, 117, 117);
+	color: white;
+	border: 1px solid rgb(51, 6, 51);
+	border-radius: 4px;
+	font-size: 13px;
+	font-weight: 300;
+	margin: 5px 15px 0 0;
+	padding: 5px 10px;
+}
+.activeButton{
+	background-color: rgb(212, 49, 150);
+	border: 1px solid rgb(51, 6, 51);
+	border-radius: 4px;
+	color: white;
+	font-size: 13px;
+	font-weight: 300;
+	margin: 5px 15px 0 0;
+	padding: 5px 10px;
+}
+
+
+#imBuiyng {
+	background-color: rgb(212, 49, 150);
+	border: 1px solid rgb(51, 6, 51);
+	border-radius: 4px;
+	color: white;
+	font-size: 15px;
+	font-weight: 300;
+	width: 80px;
+	height: 40px;
+	margin: 5px 15px 0 145px;
+	padding: 5px 10px;
+	}
+
+
+.loginSecond input[type="button"] {
+	background-color: rgb(212, 49, 150);
+	border: 1px solid rgb(51, 6, 51);
+	border-radius: 5px;
+	color: white;
+	font-size: 12px;
+	font-weight: 300;
+	width: 135px;
+	height: 25px;
+	margin: 5px 15px 0 145px;
+	padding: 5px 10px;
+	display: block;
+}
+
+div.confirmation p {
+	color: black;
+	font-weight: 300;
+	font-size: 22px;
+	line-height: 40px;
+	text-align-last: justify;
+	display: flex;
+	justify-content: center;
+}
+
+img.popcorn {
+	width: 100px;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+	 
+/* 9. Stopka */
 /* ////////////////////////////////////////////// */
 
 footer {
@@ -326,6 +435,25 @@ footer {
  .firstPage { box-shadow: 0px 0px 10px 6px black; }
 
 
+ /* 10. Logowanie */
+ /* ///////////////////////////////////////////////// */
+
+::placeholder {
+	padding: 0 5px;
+}
+
+#register:hover { cursor: pointer; }
+
+#login:hover { cursor: pointer; }
+
+.extra {
+	padding: 0 145px;
+	margin: 0;
+}
+
+
+
+
  /* !!! niepotrzebne !!! */
  /* ////////////////////////////////////////////// */
 
@@ -340,4 +468,13 @@ footer {
 /* div.dateWidget button:active {
 	background-color: rgb(109, 13, 109);
 	color: white;
+} */
+
+/* div.dateWidget button {
+	font-size: 18px;
+	font-weight: 300;
+	margin: 15px 15px 0 0;
+	padding: 5px 5px;
+	border: none;
+	background-color: #F4F4F4;
 } */

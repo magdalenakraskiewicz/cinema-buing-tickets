@@ -10,7 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700&display=swap" rel="stylesheet">
 </head>
 
-<body class="white">
+<body class="white" onload="finalSummary()">
+        
     <header class="main-head"><a href="../index.html"><img class="logo" alt="Logo KinoiWino"
                 src="../img/LOGO-KINO-I-WINO.png" width="60px" height="60px"></a></header>
     <nav>
@@ -23,25 +24,36 @@
     </nav>
 
     <section>
-        <div class="whatIsOn">
+        <div class="mainHeadline">
             <h2>Twoje zamówienie</h2>
         </div>
-        <div id="summary">
-            <h4>Informacje o bilecie</h4>
+
+        <div class="selectionInfo">
+            <div>Kino: <span id="city"></span></div>
+
+            <div>Wybrany seans: <span id="title"></span></div>
+
+            <div>Godzina: <span id="time"></span></div>
+
+            <div>Ilość biletów: <span id="ticketsAmount"></span></div>
+
+            <div>Miejsca: <span id="seats"></span></div>
+
+            <div>Suma: <span id="total"></span></div>
         </div>
     </section>
 
-
+    <button id="imBuiyng" onclick="imBuiyng()">Kupuję</button>
 
 
     <footer>
         <p>&copy; Kino i Wino. | All rights reserved. | Designed by Magdalena Kraśkiewicz.</p>
     </footer>
 
-    
-    <script src="../js/cinema.js"></script>
+
     <script src="../js/summary.js"></script>
-    <script src="../js/data.js"></script>   
+    <script src="../js/movies.js"></script>
+    
 
 </body>
 

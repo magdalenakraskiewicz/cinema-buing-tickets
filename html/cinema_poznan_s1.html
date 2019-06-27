@@ -11,55 +11,56 @@
 </head>
 
 <body class="white">
-    
+
     <header class="main-head"><a href="../index.html"><img class="logo" alt="Logo KinoiWino"
                 src="../img/LOGO-KINO-I-WINO.png" width="60px" height="60px"></a></header>
     <nav>
         <ul class="topnav">
             <li><a href="../index.html">KINO I WINO</a></li>
-            <li><a href="../html/whatison.html">REPERTUAR</a></li>
+            <li><a class="active" href="../html/whatison.html">REPERTUAR</a></li>
             <li><a href="../html/sale.html">PROMOCJE</a></li>
             <li class="right"><a href="../html/login.html">MOJE KONTO</a></li>
         </ul>
     </nav>
 
     <section>
+        <div class="mainHeadline">
+            <h2>Twoje zamówienie</h2>
+        </div>
         <div class="selectionInfo">
-            <div class="moveiName">
-                <h3>Wybrany seans: <span id="title" ></span></h3>
+            <div>Wybrany seans: <span id="title"></span></div>
+            <div>
+                Godzina: <span id="time"></span>
             </div>
-            <div class="eventDate">
-                Godzina: <span id="time" ></span>
-            </div>
-            <div class="placeInfo">
-                Miasto: <span id="city" ></span>
+            <div>
+                Miasto: <span id="city"></span>
             </div>
         </div>
     </section>
-    <br>
+    <br><br>
 
-    <div>
-        <img src="../img/screen.png">
-    </div>
+    <main class="mainScreen">
+        <div class="screen">
+            <img src="../img/screen.png" width="800px" height="auto">
+        </div>
 
-    <p>Wybierz miejsca:</p>
-    <div id="div1"></div>
+        <p class="screen">WYBIERZ MIEJSCA:</p>
+        <div id="div1"></div>
 
-    
-    Cena biletów: <div id="cena"></div>
-    <br>
-    <button id="buyTickets" onclick="buyTickets()">DALEJ</button>
+        <p class="screen">CENA BILETÓW:&nbsp; <span id="cena"></span>
+        </p>
+        <!-- Cena biletów: <div id="cena"></div> -->
+    </main>>
 
-    <!-- <footer>
+    <div class="button"><button id="buyTickets" onclick="buyTickets()">DALEJ</button></div>
+
+    <footer>
         <p>&copy; Kino i Wino. | All rights reserved. | Designed by Magdalena Kraśkiewicz.</p>
-    </footer> -->
-
-
-
+    </footer>
 
 
     <script src="../js/cinema_poznan.js"></script>
-    <script src="../js/data.js"></script>
+    <!-- <script src="../js/data.js"></script> -->
 
 </body>
 
