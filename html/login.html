@@ -18,7 +18,7 @@
             <li><a href="../index.html">KINO I WINO</a></li>
             <li><a href="../html/whatison.html">REPERTUAR</a></li>
             <li><a href="../html/sale.html">PROMOCJE</a></li>
-            <li class="right active"><a href="../html/login.html">MOJE KONTO</a></li>
+            <li class="right"><a class="active" href="../html/login.html">MOJE KONTO</a></li>
         </ul>
     </nav>
 
@@ -26,23 +26,23 @@
         <div class="mainHeadline">
             <h2>Logowanie</h2>
         </div>
-
-        <div class="mainLoginFirst">
+        <!-- class="mainLoginFirst" -->
+        <div>
             <form name="login">
                 <div class="loginFirst">ZALOGUJ SIĘ<br><br>
                     <input type="email" placeholder="e-mail" id="email"><br><br>
                     <input type="password" placeholder="Hasło" id="password"><br>
                     <p hidden id="wrong">Podane dane są nieprawidłowe.</p><br>
                 </div>
+                <input class="remember" type="checkbox" name="rememberme">&nbsp;&nbsp;Zapamiętaj mnie
         </div>
 
-        <div class="mainLoginSecond">
+        <div>
             <form name="login">
                 <div class="loginSecond">
-                    <input class="extra" type="checkbox" name="rememberme">Zapamiętaj mnie
                     <input type="button" onclick="validateForm()" value="ZALOGUJ" id="login">
                     <br>
-                    <p class="extra">Nie masz konta?</p>
+                    <p class="noaccount">Nie masz konta?</p>
                     <input type="button" onclick="registerForm()" value="ZAREJESTRUJ SIĘ" id="register">
                 </div>
             </form>

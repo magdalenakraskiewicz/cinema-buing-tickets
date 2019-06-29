@@ -25,9 +25,13 @@ body{
 
 div.quotation {
 	color: white;
-	position: absolute;
-	top: 130px;
-	margin-left: 100px;
+	margin-top: 180px;
+	font-weight: 200;
+	font-size: 22px;
+	line-height: 40px;
+	text-align-last: center;
+	display: flex;
+	justify-content: center;
 }
 
 header {
@@ -97,12 +101,18 @@ ul.topnav li a.active {
 
 ul.topnav li.right { float: right; }
 
-
-/* ul.topnav li.right a:hover:not(.active) { color: rgb(212, 49, 150); } */
-
-ul.topnav li.active {
+/* ul.topnav li.active {
 	color: rgb(212, 49, 150);
 	font-weight: 400;
+} */
+
+.activeSecond {
+	text-decoration: none;
+	color: rgb(212, 49, 150);
+  }
+.activeSecond:hover { 
+	color: rgb(212, 49, 150);
+	text-decoration: underline; 
 }
   
 @media screen and (max-width: 600px) {
@@ -219,8 +229,7 @@ div.mainHeadline h2 {
 }
 
 div.findCinema h4,
-div#summary h4,
-div.loginFirst {
+div#summary h4 {
 	color: black;
 	font-weight: 300;
 	font-size: 20px;
@@ -259,7 +268,7 @@ div.topPanel {
 	width: 100%;
 	height: auto;
 	float: left;
-	margin: 0 0 10px 0;
+	margin: 0 0 30px 0;
 }
 
 div.mainHeadlineMovies h2 {
@@ -388,7 +397,7 @@ div.selectionInfo div {
 	font-weight: 300;
 	width: 135px;
 	height: 25px;
-	margin: 5px 15px 0 145px;
+	margin: 0 0 0 145px;
 	padding: 5px 10px;
 	display: block;
 }
@@ -404,7 +413,7 @@ div.confirmation p {
 }
 
 img.popcorn {
-	width: 100px;
+	width: 90px;
 	height: auto;
 	display: block;
 	margin-left: auto;
@@ -446,10 +455,22 @@ footer {
 
 #login:hover { cursor: pointer; }
 
-.extra {
-	padding: 0 145px;
-	margin: 0;
+
+.remember,
+.noaccount {
+	margin: 0 0 10px 145px;	
 }
+
+div.loginFirst {
+	color: black;
+	font-weight: 300;
+	font-size: 20px;
+	margin: 0 0 0 145px;
+	text-transform: uppercase;
+	clear: both;
+}
+
+
 
 
 

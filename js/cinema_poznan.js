@@ -1,5 +1,3 @@
-
-
 ///sala kinowa
 
 for (var j = 1; j < 10; j++) {
@@ -23,8 +21,7 @@ for (var j = 1; j < 10; j++) {
 }
 
 
-// /stary sposob ok
-
+/// sumowanie
 var sum = 0;
 var elements = document.querySelectorAll("div span");
 elements.forEach(function (element) {
@@ -42,28 +39,6 @@ elements.forEach(function (element) {
 
     })
 })
-
-
-////sumowanie ok
-// var sum = 0;
-// var elements = document.querySelectorAll("div span");
-// elements.forEach(function (element) {
-//     element.addEventListener("click", function () {
-//         if (element.style.color == "red") {
-//             element.style.color = "black";
-//             sum = sum - 15;
-//             document.getElementById("cena").innerHTML = sum + " zł";
-//         }
-//         else {
-//             element.style.color = "red";
-//             sum = sum + 15;
-//             document.getElementById("cena").innerHTML = sum + " zł";
-//         }
-
-//     })
-// })
-
-
 
 ///pobieranie danych o wybranym filmie
 function getMovieInfo() {
@@ -95,16 +70,12 @@ function buyTickets() {
     const encodedTicketsAmount = encodeURIComponent(tickets);
 
     const seatsNodes = document.querySelectorAll("div span.selectedSpan");
-   
+
     const seats = [];
-    for (var i=0; i<seatsNodes.length; i++) {
-            seats[i]=seatsNodes[i].innerText;
+    for (var i = 0; i < seatsNodes.length; i++) {
+        seats[i] = seatsNodes[i].innerText;
     }
     const encodedSeats = encodeURIComponent(seats.join(', '));
-
-
-    
-    
 
     const url = '../html/summary.html'
         + '?title=' + encodedTitle
