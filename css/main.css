@@ -1,37 +1,47 @@
 
 /* 1. Ogólne */
 /* ////////////////////////////////////////////// */
-body{
-	padding: 0;
+html {
+	height: 100%;
+}
+
+body {
 	margin: 0;
+	padding: 0;
+	background-color: black;
 	background-size: 100%;
 	font-family: 'Lato', sans-serif;
-	/* background-size: cover; */
-	/* background: no-repeat 0 0 fixed; */
-	background-color: black;
 }
 
 .white { background-color: #F4F4F4; }
 
-.register {
-	padding: 0;
+.registerBody {
+	height: 100%;
 	margin: 0;
+	background-color: rgb(34, 5, 51);
+}
+.register {
 	background: url('../img/cool-purple-bubbles.jpg');
-	background-size: 100%;
-	background-repeat: no-repeat;
 	font-family: 'Lato', sans-serif;
-	font-weight: 300;	
+	font-weight: 300;
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	text-align: center;
 }
 
 div.quotation {
 	color: white;
-	margin-top: 180px;
 	font-weight: 200;
 	font-size: 22px;
 	line-height: 40px;
 	text-align-last: center;
-	display: flex;
-	justify-content: center;
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 header {
@@ -40,21 +50,15 @@ header {
 	url('../img/purple-wallpapers_6.jpg');
 	background-size: 100%;
 	background-repeat: no-repeat;
-	/* min-height: 100%; */
-	/* min-width: 1024px; */
 	width: 100%;
 	height: auto;
 }
 
-span {
-	font-weight: 400;
-	
-}
+span { font-weight: 400; }
 
 
 /* 2. Nawigacja */
 /* ////////////////////////////////////////////// */
-
 .logo {
 	position: relative;
 	border-radius: 10px;
@@ -70,7 +74,6 @@ ul.topnav {
 	padding: 0 100px 0 100px;
 	overflow: hidden;
 	background-color: rgb(20, 5, 24);
-	/* background-color: rgb(30, 8, 36); */
 	font-weight: 300;
 	font-size: 15px;
 	box-shadow: 0 6px 10px 6px black;
@@ -101,11 +104,6 @@ ul.topnav li a.active {
 
 ul.topnav li.right { float: right; }
 
-/* ul.topnav li.active {
-	color: rgb(212, 49, 150);
-	font-weight: 400;
-} */
-
 .activeSecond {
 	text-decoration: none;
 	color: rgb(212, 49, 150);
@@ -130,7 +128,6 @@ ul.topnav li.right { float: right; }
 
 /* 3. Background */
 /* ////////////////////////////////////////////// */
-
 .background {
 	width: 100%;
 	height: auto;
@@ -141,7 +138,9 @@ ul.topnav li.right { float: right; }
 }
 
 div.infoFront {
-	margin: 300px 0 0 145px;
+	position: absolute;
+	left: 145px;
+	bottom: 120px;
 	color: white;
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
@@ -162,15 +161,11 @@ div.details span:not(:last-of-type):after {
 	color: white;
 }
 
-span.title {
-	margin-left: 20px;
-}
-
+span.title { margin-left: 20px; }
 
 
 /* 4. Sala kinowa */
 /* ////////////////////////////////////////////// */
-
 #div1 div span {
 	font-size: 16px;
 	border-style: solid;
@@ -186,6 +181,13 @@ span.title {
 	display: flex;
 	justify-content: center;
 	font-weight: 400;
+}
+
+#hideWarning {
+	margin: auto;
+	width: 50%;
+	text-align: center;
+	color: rgb(212, 49, 150);
 }
 
 .button {
@@ -205,25 +207,20 @@ span.title {
 	padding: 5px 10px;
 	}
 
-.addedSpan {
-	color: black;
-}
+.addedSpan { color: black; }
 .selectedSpan {
 	color: rgb(212, 49, 150);
 }
 
 
-
 /* 5. Repertuar */
 /* ////////////////////////////////////////////// */
-
 div.mainHeadline h2 {
 	background-color: rgb(202, 200, 200);
 	color: black;
 	font-weight: 300;
 	font-size: 25px;
 	margin: 0 0 50px 0;
-	
 	padding: 40px 0 20px 145px;
 	text-transform: uppercase;
 }
@@ -259,10 +256,8 @@ div.loginFirst input {
 }
 
 
-
 /* 6. Top Panel Repertuar miasto */
 /* ////////////////////////////////////////////// */
-
 div.topPanel {
 	background-color: rgb(202, 200, 200);
 	width: 100%;
@@ -292,6 +287,14 @@ div.findCinemaSecond h4 {
 	font-weight: 400;
 	font-size: 14px;
 	text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+	div.findCinemaSecond {
+		float: none;}
+		div.findCinemaSecond h4  {
+		display: inline-block;
+	}
 }
 
 div.findCinemaSecond select {
@@ -351,7 +354,6 @@ div.selectionInfo div {
 
 /* 8. Buttons */
 /* ////////////////////////////////////////////// */
-
 .nonactiveButton{
 	background-color: rgb(117, 117, 117);
 	color: white;
@@ -373,7 +375,6 @@ div.selectionInfo div {
 	padding: 5px 10px;
 }
 
-
 #imBuiyng {
 	background-color: rgb(212, 49, 150);
 	border: 1px solid rgb(51, 6, 51);
@@ -386,7 +387,6 @@ div.selectionInfo div {
 	margin: 5px 15px 0 145px;
 	padding: 5px 10px;
 	}
-
 
 .loginSecond input[type="button"] {
 	background-color: rgb(212, 49, 150);
@@ -421,16 +421,12 @@ img.popcorn {
 }
 
 
-	 
 /* 9. Stopka */
 /* ////////////////////////////////////////////// */
-
 footer {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	/* margin: 0;
-	padding: 0; */
 	background-color: rgb(20, 5, 24);
 	color: white;
 	text-align: center;
@@ -446,7 +442,6 @@ footer {
 
  /* 10. Logowanie */
  /* ///////////////////////////////////////////////// */
-
 ::placeholder {
 	padding: 0 5px;
 }
@@ -454,7 +449,6 @@ footer {
 #register:hover { cursor: pointer; }
 
 #login:hover { cursor: pointer; }
-
 
 .remember,
 .noaccount {
@@ -469,33 +463,3 @@ div.loginFirst {
 	text-transform: uppercase;
 	clear: both;
 }
-
-
-
-
-
-
- /* !!! niepotrzebne !!! */
- /* ////////////////////////////////////////////// */
-
- /* button {
-	outline: none;
-  } */
-
-/* div.dateWidget button:hover {
-	cursor: pointer;
-} */
-
-/* div.dateWidget button:active {
-	background-color: rgb(109, 13, 109);
-	color: white;
-} */
-
-/* div.dateWidget button {
-	font-size: 18px;
-	font-weight: 300;
-	margin: 15px 15px 0 0;
-	padding: 5px 5px;
-	border: none;
-	background-color: #F4F4F4;
-} */

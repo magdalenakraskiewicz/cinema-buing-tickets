@@ -23,6 +23,7 @@ function validation(email, password) {
 
 }
 
+///login na click
 function validateForm() {
     let email = document.getElementById("email").value;
     let password = document.getElementById("password").value;
@@ -35,6 +36,16 @@ function validateForm() {
         document.getElementById("wrong").hidden=false;
     }
 }
+
+///login na enter
+var input = document.getElementById("password");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("login").click();
+  }
+});
+
 
 function registerForm() {
     window.open('../html/register.html','_self');

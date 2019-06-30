@@ -11,7 +11,6 @@ for (var j = 1; j < 10; j++) {
         // /dodanie klas i wlaściwości do spanów
         para.classList.add("addedSpan");
 
-
         para.appendChild(node);
         para_parent.appendChild(para);
     }
@@ -36,9 +35,13 @@ elements.forEach(function (element) {
             sum = sum + 15;
             document.getElementById("cena").innerHTML = sum + " zł";
         }
-
+        hideWarning();
     })
 })
+
+function hideWarning() {
+    document.getElementById("hideWarning").hidden = true;
+}
 
 ///pobieranie danych o wybranym filmie
 function getMovieInfo() {
@@ -84,5 +87,10 @@ function buyTickets() {
         + "&sum=" + encodedSum
         + "&seats=" + encodedSeats
         + "&tickets=" + encodedTicketsAmount;
-    window.open(url, '_self');
+
+    if (sum === 0) {
+        document.getElementById("hideWarning").hidden = false;
+    } else {
+        window.open(url, '_self')
+    }
 }
